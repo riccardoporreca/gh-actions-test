@@ -5,12 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: On my_custom_webhook do ABC...
-      if: github.event.action == 'my_custom_webhook'
+    - name: webhook...
       run: |
-        echo "Hello From my_custom_webhook...doing ABC"
-        
-    - name: On my_custom_webhook do XYZ...
-      if: github.event.action == 'my_custom_webhook_2'
-      run: |
-        echo "Hello From my_custom_webhook_2...doing XYZ"
+        echo "Hello Webhook world"
