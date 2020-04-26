@@ -1,7 +1,7 @@
 name: Webhook Example
 on: 
   repository_dispatch:
-    - types: [actions-trigger]
+    types: [actions-trigger]
   
 jobs:
   build:
