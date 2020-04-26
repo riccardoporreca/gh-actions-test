@@ -4,7 +4,8 @@ name: scheduled-job
 
 on:
   schedule:
-    - cron: '*/3 * * * *'
+    # The shortest interval you can run scheduled workflows is once every 5 minutes.
+    - cron: '*/5 * * * *'
     
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
