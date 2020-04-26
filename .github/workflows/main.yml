@@ -1,5 +1,8 @@
 name: Webhook Example
-on: repository_dispatch
+on: 
+  repository_dispatch:
+    - types: [actions-trigger]
+  
 jobs:
   build:
     runs-on: ubuntu-latest
